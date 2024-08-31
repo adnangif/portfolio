@@ -87,12 +87,12 @@ body {
 }
 
 .section-featured-work {
-    color: white;
     padding: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .section-skills {
@@ -170,21 +170,34 @@ body {
 }
 
 .card {
-    max-width: 300px;
-    background-color: white;
-    border-radius: 3rem;
+    border-radius: 1rem;
     overflow: hidden;
     transition: all 300ms;
-    border: solid 3px #ffffff;
-    /* box-shadow: rgb(44, 44, 44) 8px 16px 24px; */
+    background-color: #eaeaeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: #1d1d1e;
+    padding: 0 1rem;
+    transition: all 300ms;
+}
+
+.card:hover{
+    transform: translate(0,-0.5rem);
+    
+}
+.card:focus{
+    animation: headShake 1s linear;
 
 }
 
-.card:hover {
-    scale: 1.05;
-    border: solid 3px var(--color-primary);
-
+.card > img {
+    box-shadow: #dcdcdc 5px 5px 10px;
+    margin: 1rem;
+    border-radius: 0.5rem;
 }
+
 
 .card-subtitle {
     text-align: center;
@@ -195,20 +208,21 @@ body {
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     gap: 2rem;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 7rem;
 }
 
 
 .footer {
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1.2rem;
     font-weight: 800;
-    background-color: #ecebee;
+    background: #00C9FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     width: 100%;
     text-align: center;
 }
@@ -257,11 +271,7 @@ body {
 }
 
 
-@media screen and (max-width: 760px) {
-    .section-1 {
-        padding: 5rem 0;
-    }
-}
+
 
 
 
@@ -306,8 +316,31 @@ body {
         opacity: .5;
     }
 
+    80%{
+        opacity: 0.2;
+    }
+
     100% {
         transform: translate(-2000px, 2000px) rotate(45deg);
-        opacity: 0.5;
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    .card-container{
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .section-1 {
+        padding: 5rem 0;
+    }
+
+    .card-container{
+        grid-template-columns: 1fr;
+        padding: 1rem;
     }
 }
