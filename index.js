@@ -6,7 +6,7 @@ for(let i = 0;i <100;i++){
     const body_width = parent.clientWidth
 
     const random_height =  Math.random() * body_height - 50
-    const random_width = (Math.random() * body_width) * 3
+    const random_width = (Math.random() * body_width) * 5
 
     const custom_element = document.createElement('div')
     custom_element.classList.add('snowflake')
