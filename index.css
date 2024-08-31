@@ -166,8 +166,34 @@ body {
 .subtitle {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 2.5rem;
 }
+
+.technologies-container {
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.technology-tick {
+    border-radius: 0.75rem;
+    padding: 3px 8px;
+    background-color:#d8d7d9;
+    transition: all 300ms;
+}
+
+.technology-tick:hover{
+    background-color: white;
+    box-shadow: var(--color-secondary) 1px 1px 0 3px;
+}
+
+.technology-tick img {
+    height: 20px;
+    width: 20px;
+}
+
+
 
 .card {
     border-radius: 1rem;
@@ -183,16 +209,12 @@ body {
     transition: all 300ms;
 }
 
-.card:hover{
-    transform: translate(0,-0.5rem);
-    
-}
-.card:focus{
-    animation: headShake 1s linear;
+.card:hover {
+    transform: translate(0, -0.5rem);
 
 }
 
-.card > img {
+.card>img {
     box-shadow: #dcdcdc 5px 5px 10px;
     margin: 1rem;
     border-radius: 0.5rem;
@@ -201,7 +223,7 @@ body {
 
 .card-subtitle {
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     font-weight: 800;
     font-size: 1.2rem;
 
@@ -219,10 +241,13 @@ body {
     padding: 0.5rem;
     font-size: 1.2rem;
     font-weight: 800;
-    background: #00C9FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #00C9FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #92FE9D, #00C9FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     width: 100%;
     text-align: center;
 }
@@ -316,7 +341,7 @@ body {
         opacity: .5;
     }
 
-    80%{
+    80% {
         opacity: 0.2;
     }
 
@@ -326,9 +351,24 @@ body {
     }
 }
 
+@keyframes bgChange {
 
-@media screen and (max-width: 1200px){
-    .card-container{
+    0%,
+    100% {
+        background: #00C9FF;
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    50% {
+        background: #92FE9D;
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card-container {
         padding: 0;
     }
 }
@@ -339,7 +379,7 @@ body {
         padding: 5rem 0;
     }
 
-    .card-container{
+    .card-container {
         grid-template-columns: 1fr;
         padding: 1rem;
     }
