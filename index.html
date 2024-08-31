@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="index.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -22,14 +23,15 @@
         <div class="flex justify-around w-full fs-medium bold items-center">
             <div class="flex gap-16 items-center">
 
-                <div class="border-4 border-[#1d1d1e] rounded-lg p-2 py-1 cursor-default">MF</div>
-                <a href="#" class="border-b-8 border-teal-500 hover:bg-teal-500 duration-200 hover:text-white">Featured
+                <div class="mf">
+                    MF
+                </div>
+                <a href="#" class="btn btn-normal">Featured
                     Works</a>
                 <a href="#"
-                    class="border-b-8 border-teal-500 hover:bg-teal-500 duration-200 hover:text-white">Projects</a>
+                    class=" btn btn-normal">Projects</a>
             </div>
-            <button
-                class="border-4 border-[#1d1d1e] rounded-lg p-2 py-1 hover:bg-gray-800 hover:text-white duration-200">Contact
+            <button class="btn btn-contact-me">Contact
                 Me</button>
         </div>
 
@@ -39,13 +41,33 @@
 
         <div>
             <p class="description-text">
-                Hi, I'm <strong class="text-teal-500">Adnan.</strong> Explore my projects and see what I'm passionate
+                Hi, I'm <strong class="gradient-text">Adnan.</strong> Explore my projects and see what I'm passionate
                 about. I strive to build with heart and
                 purpose <span class="text-teal-500">❤</span>
             </p>
         </div>
     </div>
 
+
+
+    <div class="section-skills text-[#1d1d1e]">
+        <a href="#" class="skill-box">
+            <img src="assets/linkedin-svgrepo-com.svg" width="100px" height="100px">
+        </a>
+
+        <a href="#" class="skill-box">
+            <img src="assets/github-142-svgrepo-com.svg" width="100px" height="100px">
+        </a>
+
+        <a href="#" class="skill-box">
+            <img src="assets/email-svgrepo-com.svg" width="100px" height="100px">
+        </a>
+        <a href="#" class="skill-box">
+            <span class="text-3xl font-bold uppercase gradient-text">Resume</span>
+        </a>
+
+
+    </div>
     <div class="section-featured-work bg-[#1d1d1e]">
         <div class="flex flex-col">
             <div class="title">FreshBite 🍔</div>
@@ -54,23 +76,23 @@
             <div class="card-container">
                 <div class="card">
                     <img src="assets/fresh-bite/fresh-bite.png" width="400">
-                    <div class="card-subtitle">Delivering Fresh Flavors to Your Doorstep</div>
+                    <div class="card-subtitle bg-lime-600">Delivering Fresh Flavors to Your Doorstep</div>
                 </div>
                 <div class="card">
                     <img src="assets/fresh-bite/fresh-bite-2.png" width="400">
-                    <div class="card-subtitle">Track Orders, Live Chat with Rider and Much More</div>
+                    <div class="card-subtitle bg-green-600">Track Orders, Live Chat with Rider and Much More</div>
                 </div>
                 <div class="card">
                     <img src="assets/fresh-bite/fresh-bite-3.png" width="400">
-                    <div class="card-subtitle">Customize Your Preferences and Info</div>
+                    <div class="card-subtitle bg-emerald-600">Customize Your Preferences and Info</div>
                 </div>
                 <div class="card">
                     <img src="assets/fresh-bite/fresh-bite-4.png" width="400">
-                    <div class="card-subtitle">Double-Check for Deliciousness</div>
+                    <div class="card-subtitle bg-cyan-600">Double-Check for Deliciousness</div>
                 </div>
                 <div class="card">
                     <img src="assets/fresh-bite/fresh-bite-5.png" width="400">
-                    <div class="card-subtitle">Secure Payment, Easy Checkout</div>
+                    <div class="card-subtitle bg-sky-600">Secure Payment, Easy Checkout</div>
                 </div>
             </div>
         </div>
@@ -84,27 +106,31 @@
 
             <div class="card-container">
                 <div class="card">
-                    <img src="assets/v2gsol/dashboard.png" width="400">
-                    <div class="card-subtitle">Dashboard Displaying Real-Time Pump Status and Performance</div>
+                    <img src="assets/v2gsol/dashboard.png">
+                    <div class="card-subtitle bg-lime-600">Real-Time Pump Status and Performance</div>
                 </div>
                 <div class="card">
-                    <img src="assets/v2gsol/ctc.png" width="400">
-                    <div class="card-subtitle">Comprehensive Cost to Company Overview and Analysis</div>
+                    <img src="assets/v2gsol/ctc.png">
+                    <div class="card-subtitle bg-green-600">Cost to Company Overview and Analysis</div>
                 </div>
                 <div class="card">
-                    <img src="assets/v2gsol/graph.png" width="400">
-                    <div class="card-subtitle">Interactive Graphs Enhancing User Experience and Data Visualization</div>
+                    <img src="assets/v2gsol/graph.png">
+                    <div class="card-subtitle bg-emerald-600">Interactive Graphs, Data Visualization</div>
                 </div>
                 <div class="card">
-                    <img src="assets/v2gsol/settings.png" width="400">
-                    <div class="card-subtitle">Customizable Settings for Enhanced Control and Flexibility</div>
+                    <img src="assets/v2gsol/settings.png">
+                    <div class="card-subtitle  bg-cyan-600">Control, Flexibility and maintenance</div>
                 </div>
                 <div class="card">
-                    <img src="assets/v2gsol/timetable.png" width="400">
-                    <div class="card-subtitle">Employee Schedule Management and Timetable Coordination</div>
+                    <img src="assets/v2gsol/timetable.png">
+                    <div class="card-subtitle bg-sky-600">Schedule and Timetable Coordination</div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer">© 2024 Muhammad Fahim. All Rights Reserved.</div>
+    <div class="snowflake-container">
+        <div id="body-end w-0"></div>
     </div>
 
 </body>
