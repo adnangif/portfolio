@@ -68,13 +68,15 @@ body {
 }
 
 .pp {
-    height: 25rem;
-    width: 25rem;
-    margin: 8rem;
+    max-height: 20rem;
+    max-width: 20rem;
     border-radius: 50%;
     border: solid 0.5rem var(--color-secondary);
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {}
+
 
 .description-text {
     font-size: 3.5rem;
@@ -179,12 +181,12 @@ body {
 .technology-tick {
     border-radius: 0.75rem;
     padding: 3px 8px;
-    background-color:#d8d7d9;
+    background-color: #d8d7d9;
     transition: all 300ms;
     cursor: default;
 }
 
-.technology-tick:hover{
+.technology-tick:hover {
     background-color: white;
     box-shadow: var(--color-secondary) 1px 1px 0 3px;
 }
@@ -367,6 +369,20 @@ body {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    #navbar {
+        display: none;
+    }
+
+    #smallnav {
+        display: flex;
+        background: #00b09b;
+        background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+        background: linear-gradient(to right, #96c93d, #00b09b);
+        box-shadow: #b5b5b5 0 2px 5px 2px;
+    }
+}
+
 
 @media screen and (max-width: 1200px) {
     .card-container {
@@ -383,5 +399,33 @@ body {
     .card-container {
         grid-template-columns: 1fr;
         padding: 1rem;
+    }
+
+    .pp {
+        max-height: 15rem;
+        max-width: 15rem;
+    }
+
+    .description-text {
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 0.5rem;
+    }
+
+    .section-featured-work {
+        padding: 0;
+    }
+
+    .subtitle {
+        line-height: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    .card-container {
+        gap: 0.5rem;
+    }
+
+    .technologies-container {
+        padding-bottom: 1rem;
     }
 }

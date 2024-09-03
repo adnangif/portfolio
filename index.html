@@ -20,8 +20,8 @@
 <body>
     <div class="section-1">
 
-        <div class="flex justify-around w-full fs-medium bold items-center">
-            <div class="flex gap-16 items-center">
+        <div id="navbar" class="flex justify-around w-full fs-medium bold items-center">
+            <div class="flex lg:gap-16 md:gap-4 items-center">
 
                 <div class="mf">
                     MF
@@ -34,8 +34,20 @@
                 Me</button>
         </div>
 
-        <div>
-            <img src="assets/pp_fixed.JPG" class="pp hover:border-teal-500 duration-500">
+        <div id="smallnav" class="flex justify-between bg-white  fixed left-0 top-0 right-0 hidden bold items-center px-4 py-2">
+            <a href="#" class="mf">
+                MF
+            </a>
+            <div class="flex gap-1">
+
+                <a href="#" class="btn btn-normal">Featured
+                    Works</a>
+                <a href="#" class=" btn btn-normal">Projects</a>
+            </div>
+        </div>
+
+        <div class="">
+            <img src="assets/pp_fixed.JPG" class="pp hover:border-teal-500 duration-500 lg:m-[8rem]">
         </div>
 
         <div>
