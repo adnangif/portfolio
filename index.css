@@ -377,8 +377,8 @@ body {
     #smallnav {
         display: flex;
         background: #00b09b;
-        background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
-        background: linear-gradient(to right, #96c93d, #00b09b);
+        background: -webkit-linear-gradient(to left, #96c93d, #00b09b);
+        background: linear-gradient(to left, #96c93d, #00b09b);
         box-shadow: #b5b5b5 0 2px 5px 2px;
     }
 }
